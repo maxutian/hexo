@@ -2,6 +2,8 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+since: 2017
+
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico
 
@@ -17,7 +19,7 @@ rss:
 #since: 2015
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: 
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -38,10 +40,10 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
+  categories: /categories
   #about: /about
   archives: /archives
-  tags: /tags
+  #tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -94,19 +96,19 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: Monda
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: 
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    family:
+    family: 
 
   # Font settings for Logo
   # Fallback to `global` font settings.
@@ -114,13 +116,13 @@ font:
   logo:
     external: true
     family:
-    size:
+    size: 
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
-    size:
+    family: PT Mono
+    size: 13
 
 
 
@@ -133,8 +135,9 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/maxutian
+  知乎: https://www.zhihu.com/people/ma-xu-tian-55/activities 
 
 
 # Social Links Icons
@@ -268,7 +271,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
@@ -286,10 +289,11 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: aadc36294225ced8b9be21abc913bbb2
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: mxtblog
+
 
 # Disqus
 #disqus_shortname:
@@ -388,9 +392,9 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: ANffodNgcr59bkWyBP7lfIcC-gzGzoHsz
+  app_key: USUiAIKCUUGyC4wM2lMkRpM6
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -419,7 +423,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -442,7 +446,7 @@ calendar:
 algolia_search:
   enable: false
   hits:
-    per_page: 10
+    per_page: 5
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
@@ -451,7 +455,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}
