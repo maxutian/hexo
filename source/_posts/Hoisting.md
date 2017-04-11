@@ -2,8 +2,8 @@
 title: Hoisting
 date: 2017-04-11 20:15:08
 tags:
-	-Hoisting,
-	-javascript
+	- Hoisting,
+	- javascript
 categories: javascript
 ---
 {% note primary %}

@@ -2,8 +2,8 @@
 title: Flexbox Layout
 date: 2017-03-26 20:54:06
 tags:
-	-flexbox,
-	-css
+	- flexbox,
+	- css
 categories: CSS
 ---
 
