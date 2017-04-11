@@ -10,7 +10,7 @@ categories: CSS
 {% note primary %}
 
 **flexbox布局学习笔记**
-**[版权所属](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)**
+**[原文链接](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)**
 
 {% endnote %}
 
