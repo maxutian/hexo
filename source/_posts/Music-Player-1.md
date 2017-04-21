@@ -13,6 +13,7 @@ categories: javascript
 {% note primary %}
 
 **[项目地址](https://github.com/maxutian/js-practices/tree/master/player)**
+**[在线预览](https://maxutian.github.io/js-practices/player/player.html)**
 
 {% endnote %}
 
@@ -25,6 +26,8 @@ categories: javascript
 在正式动工之前，我先在mdn查看了audio标签的各种api，对于歌曲的播放、暂停，音量的控制方法等有了一个大致的了解。但是除了这些最基础的功能，还需要实现进度条随歌曲播放的滚动效果、拖动进度条改变歌曲进度/改变音量大小的功能，这也是这个player最复杂的部分。
 
 下面就开始正式实现这个播放器。
+
+## 播放、暂停功能
 
 播放器的播放、暂停功能通过一个按钮实现，我们首先给按钮绑定一个点击事件，当点击事件发生时，通过改变<i>标签的innerHTMl来改变按钮的图标。同时结合audio.play()、audio.pause()方法实现歌曲的播放和暂停。
 
@@ -51,6 +54,8 @@ function changeIcon(){
 
 ```
 
+## 静音功能
+
 同样的原理，实现音量键的静音功能：
 
 ```
@@ -72,6 +77,8 @@ function volumeControl () {
 ```
 
 <!-- more -->
+
+## 进度条拖拽
 
 接下来，实现歌曲进度条和音量条的拖动功能，由于对相关api并不是特别了解，就从网上找了一个现成的轮子(由于进度条和音量条都需要实现拖动，我对原函数进行了封装，便于重复使用。另外把原来的固定长度改成了百分比长度，以解决窗口大小的改变造成的进度条长度不正确问题)：
 
@@ -116,6 +123,8 @@ document.onmouseup = function () {
 
 成功实现进度条的拖动！过程中，了解了以前没接触过的clientX、offsetWidth、offsetLeft等属性，在以后碰到类似的问题时，不至于毫无头绪了。
 
+## 当前时间和总时长
+
 在真正实现拖动进度条功能之前，需要在进度条右方添加歌曲的总时间和当前播放时间。运用audio的duration属性，配合简单的乘除法和求余运算就可以实现：
 
 ```
@@ -147,6 +156,8 @@ function currentLength () {
 }
 
 ```
+
+## 拖拽改变歌曲进度和音量大小
 
 接下来，就要通过进度条的拖拽实现歌曲进度的改变和音量大小的改变了。这里，我通过progressbar的width属性占进度条总长度的比例配合duration属性以确定进度条上不同位置对应的歌曲时间。
 
@@ -185,6 +196,8 @@ document.onmouseup = function () {
 }
 
 ```
+
+## BUG解决
 
 在这里，我碰到了好大一个坑，经过我的不懈努力，最终才算解决了。一开始，我将改变歌曲进度的代码放在了onmouseup事件下：
 
