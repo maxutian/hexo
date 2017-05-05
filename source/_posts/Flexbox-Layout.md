@@ -66,9 +66,9 @@ flexbox布局模块主要是为了提供一个更加方便有效的布局方式�
 
 ```
 
-.container{
-	display: flex;
-}
+	.container{
+		display: flex;
+	}
 
 ```
 
@@ -108,9 +108,9 @@ flexbox布局模块主要是为了提供一个更加方便有效的布局方式�
 
 ```
 
-.container{
-	flex-wrap: nowrap | wrap | wrap-reverse;
-}
+	.container{
+		flex-wrap: nowrap | wrap | wrap-reverse;
+	}
 
 ```
 
@@ -126,7 +126,7 @@ flexbox布局模块主要是为了提供一个更加方便有效的布局方式�
 
 ```
 
-flex-flow: <'flex-direction'> | <'flex-wrap'>;
+	flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
@@ -138,9 +138,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.container{
-	justify-content: flwx-start | flex-end | cneter | space-between | space-around;
-}
+	.container{
+		justify-content: flwx-start | flex-end | cneter | space-between | space-around;
+	}
 
 ```
 
@@ -162,9 +162,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.container{
-	align-items: flex-start | flex-end | center | baseline | stretch;
-}
+	.container{
+		align-items: flex-start | flex-end | center | baseline | stretch;
+	}
 
 ```
 
@@ -192,9 +192,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.container{
-	align-content: flex-start | flex-end | center | sapce-between | sapce-around | stretch;
-}
+	.container{
+		align-content: flex-start | flex-end | center | sapce-between | sapce-around | stretch;
+	}
 
 ```
 
@@ -222,9 +222,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.item{
-	order: <integer>;
-}
+	.item{
+		order: <integer>;
+	}
 
 ```
 
@@ -236,9 +236,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.item{
-	flex-grow: <number>;
-}
+	.item{
+		flex-grow: <number>;
+	}
 
 ```
 
@@ -248,9 +248,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.item{
-	flex-shrink: <number>;
-}
+	.item{
+		flex-shrink: <number>;
+	}
 
 ```
 
@@ -262,9 +262,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.item {
-  flex-basis: <length> | auto;
-}
+	.item {
+	  flex-basis: <length> | auto;
+	}
 
 ```
 
@@ -274,9 +274,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.item {
-  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-}
+	.item {
+	  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+	}
 
 ```
 
@@ -295,9 +295,9 @@ flex-flow: <'flex-direction'> | <'flex-wrap'>;
 
 ```
 
-.item {
-  align-self: auto | flex-start | flex-end | center | baseline | stretch;
-}
+	.item {
+	  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	}
 
 ```
 

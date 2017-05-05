@@ -22,27 +22,27 @@ categories: javascript
 
 ```
 
-var foo = 1;
-function bar(){
-	if(!foo){
-		var foo = 10;
+	var foo = 1;
+	function bar(){
+		if(!foo){
+			var foo = 10;
+		}
+		alert(foo);
 	}
-	alert(foo);
-}
-bar();
+	bar();
 
 ```
 
 ```
 
-var a = 1;
-function b(){
+	var a = 1;
+	function b(){
 		a = 10;
 		return;
 		function a(){}
-}
-b();
-alert(a);
+	}
+	b();
+	alert(a);
 
 ```
 
@@ -56,28 +56,28 @@ alert(a);
 
 ```
 
-var foo = 1;
-function bar() {
+	var foo = 1;
+	function bar() {
     var foo;
     if (!foo) {
         foo = 10;
     }
     alert(foo);
-}
-bar();
+	}
+	bar();
 
 ```
 
 ```
 
-var a = 1;
-function b() {
+	var a = 1;
+	function b() {
     function a() {}
     a = 10;
     return;
-}
-b();
-alert(a);
+	}
+	b();
+	alert(a);
 
 ```
 

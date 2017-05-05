@@ -23,23 +23,23 @@ categories: javascript
 
 ```
 
-function clickChange (duration) {
-  var e = event || window.event;
-  duration.onclick = function () {
-    var dleft = event.clientX - duration.offsetLeft;
-    if (this.id === 'v-player-duration') {
-      var clickTime = (dleft / bgWidth.offsetWidth) * audio.duration;
-      audio.currentTime = clickTime;
-    }else if (this.id === 'v-volume-duration') {
-      var clickVolume = dleft / vbgWidth.offsetWidth;
-      audio.volume = clickVolume;
+  function clickChange (duration) {
+    var e = event || window.event;
+    duration.onclick = function () {
+      var dleft = event.clientX - duration.offsetLeft;
+      if (this.id === 'v-player-duration') {
+        var clickTime = (dleft / bgWidth.offsetWidth) * audio.duration;
+        audio.currentTime = clickTime;
+      }else if (this.id === 'v-volume-duration') {
+        var clickVolume = dleft / vbgWidth.offsetWidth;
+        audio.volume = clickVolume;
+      }
+      var currentWidth = (audio.currentTime / audio.duration) * bgWidth.offsetWidth;
+      var currentVolume = audio.volume * vbgWidth.offsetWidth;
+      ppb.style.width = ppointer.style.left = currentWidth + 'px';
+      vpb.style.width = vpointer.style.left = currentVolume + 'px';
     }
-    var currentWidth = (audio.currentTime / audio.duration) * bgWidth.offsetWidth;
-    var currentVolume = audio.volume * vbgWidth.offsetWidth;
-    ppb.style.width = ppointer.style.left = currentWidth + 'px';
-    vpb.style.width = vpointer.style.left = currentVolume + 'px';
   }
-}
 
 ```
 
