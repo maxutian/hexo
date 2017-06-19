@@ -10,6 +10,8 @@ categories: javascript
 
 临近期末了，要忙的事情很多，算来有将近一个月没有更新博客了，正好今天忙完了，上来更新一下最近的成果——[VueMusic][vuemusic]。没错，一个由vue全家桶写成的音乐播放器。虽然在我之前已经有很多大神写过类似的东西了，现在写有点跟风的意思，但是fuck it!能学到东西才是最重要的。
 
+[在线地址][online]
+
 写这个东西，一是为了完成一项期末大作业，二是因为自己的兴趣，当然最重要的还是为了提高自己的技术。对于刚接触vue的一个js初学者来说，在甚至没有看完vue文档的情况下，能够完成这个项目，真的是相当的不容易。虽然这个项目目前只是“能用”而已，还有许多不完善的地方，但是别担心，我以后会继续完善这个项目的。
 
 
@@ -68,3 +70,4 @@ node app.js //api插件
 [vs]: https://github.com/NightCatSama/vue-slider-component
 [plugin]: https://pan.baidu.com/s/1i5mmdSh
 [vuemusic]: https://github.com/maxutian/vue-music
+[online]: http://music.maxutian.cn
