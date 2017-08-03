@@ -21,6 +21,8 @@ categories: javascript
 
 下图是完成后的样子：
 
+<!-- more -->
+
 ![外观图](https://www.tuchuang001.com/images/2017/04/21/d382332e28bcc77b.png)
 
 在正式动工之前，我先在mdn查看了audio标签的各种api，对于歌曲的播放、暂停，音量的控制方法等有了一个大致的了解。但是除了这些最基础的功能，还需要实现进度条随歌曲播放的滚动效果、拖动进度条改变歌曲进度/改变音量大小的功能，这也是这个player最复杂的部分。
@@ -75,8 +77,6 @@ categories: javascript
   }
 
 ```
-
-<!-- more -->
 
 ## 进度条拖拽
 

@@ -1,5 +1,5 @@
 ---
-title: Vue-Music_Project
+title: Vue-Music-Project
 date: 2017-06-19 17:34:10
 tags:
 	- vue.js,
@@ -14,6 +14,7 @@ categories: javascript
 
 写这个东西，一是为了完成一项期末大作业，二是因为自己的兴趣，当然最重要的还是为了提高自己的技术。对于刚接触vue的一个js初学者来说，在甚至没有看完vue文档的情况下，能够完成这个项目，真的是相当的不容易。虽然这个项目目前只是“能用”而已，还有许多不完善的地方，但是别担心，我以后会继续完善这个项目的。
 
+<!-- more -->
 
 好了，下面是一个简短的README：
 
@@ -28,8 +29,6 @@ categories: javascript
 * NetEaseMusicApi
 
 其中，[VueSlider][vs]用于实现播放器和音量控制的进度条部分,[VueMaterial][vm]是一个开源的UI框架，用于在vue项目中实现google的Material Design设计语言。
-
-<!-- more -->
 
 ## 使用方法
 

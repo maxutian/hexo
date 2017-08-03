@@ -21,6 +21,8 @@ categories: javascript
 
 下面就是此部分功能的代码：
 
+<!-- more -->
+
 ```
 
   function clickChange (duration) {
