@@ -49,11 +49,11 @@ alert(person.friends); //'m', 'x', 't', 'rob', 'bob';
 
 ```
 
-要实现这种继承，要求你必须有一个对象可以作为另一个对象的基础，即例子中的person对象。当调用object函数返回新对象后，你可以根据自己的需要添加属性、方法，或者修改原函数的属性、方法。事实上，在es5中，新增的Object.create()方法起到了与object()方法相同的效果。所以我们可以用`Object.create(person)`语句来替换`object(person)`语句。
+要实现这种继承，要求你必须有一个对象可以作为另一个对象的基础，即例子中的person对象。当调用object函数返回新对象后，你可以根据自己的需要添加属性、方法。事实上，在es5中，新增的Object.create()方法起到了与object()方法相同的效果。所以我们可以用`Object.create(person)`语句来替换`object(person)`语句。
 
 ## 局限性
 
-依然是引用类型数值的坑，即一个子类对引用类型值的修改会体现在所有子类中。
+依然是引用类型数值的坑，即一个子类对引用类型值的修改会体现在所有子类中。并且函数不可复用。
 
 # 寄生式继承
 
@@ -83,7 +83,7 @@ function createAnother(original){
 
 ## 局限性
 
-依然没有解决基础对象上引用类型值的共享问题。
+依然没有解决基础对象上引用类型值的共享问题。函数依然无法复用。
 
 # 寄生组合式继承
 
@@ -117,7 +117,7 @@ SuperType.prototype.sayName = function (){
 
 function SubType(name, age){
 	SuperType.call(this, name);
-	this.age = 10;
+	this.age = age;
 }
 
 SubType.prototype = inheritPrototype(subType, superType);
